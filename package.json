@@ -4,13 +4,18 @@
   "description": "cypress BDD Testing with Cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open":"cypress open",
+    "cy:tests":"cypress run"
   },
   "author": "alfansyah",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^9.2.1",
+    "cypress": "^9.2.1", 
     "cypress-cucumber-preprocessor": "^4.3.1",
     "prettier": "^2.5.1"
+  },
+  "cypress-cucumber-preprocessor":{
+    "nonGlobalStepDefinitions":true,
+    "commonPath": "cypress/integration/bdd-test/login-test"
   }
 }
