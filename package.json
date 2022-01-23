@@ -16,6 +16,6 @@
   },
   "cypress-cucumber-preprocessor":{
     "nonGlobalStepDefinitions":true,
-    "commonPath": "cypress/integration/bdd-test/login-test"
+    "commonPath": "cypress/integration/"
   }
 }
